@@ -1,7 +1,7 @@
 ﻿@charset "utf-8";
 /* Font
 ---------------------------------------------------- */
-*:not(.glyphicon) {font-family: '微軟正黑體', 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', 'Microsoft YaHei', Helvetica, Arial, Verdana, sans-serif !important;}
+*:not(.glyphicon):not([class*=uk-icon]):not(.fc-icon) {font-family: '微軟正黑體', 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', 'Microsoft YaHei', Helvetica, Arial, Verdana, sans-serif !important;}
 * {text-shadow: none !important;}
 [class*=uk-icon-] {font-family: FontAwesome !important;}
 [class*=fa-] {font-family: FontAwesome !important;}
@@ -208,7 +208,7 @@ img[src=""] {display: none;}
 /* Margin */
 a:not([class*="mr"]):not([class*="ml"]):not([class*="mx"]):not([class*=uk-margin]):not(:last-child):not(:only-of-type):not(.uk-slidenav), span:not([class*="mr"]):not([class*="ml"]):not([class*="mx"]):not([class*=uk-margin]):not(:last-child):not(:only-of-type), .child_margin a:not([class*="mr"]):not([class*="ml"]):not([class*="mx"]):not([class*=uk-margin]):not(:last-child) {margin-right: 5px;}
 /* a:not([class*="m"]):last-child, a:not([class*="-margin"]):last-child, span:not([class*="-margin"]):last-child {margin-right: 0 !important;} */
-*:not([class*=m]):not([class*=uk-margin]):last-child {margin-bottom: 0 !important;}
+/* *:not([class*=m]):not([class*=uk-margin]):last-child {margin-bottom: 0 !important;} */
 
 /* List */
 ol, ul {padding-left: 1em;}
@@ -340,6 +340,7 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 ---------------------------------------------------- */
 
 .btn {white-space: normal !important; word-wrap: break-word;}
+a.fc-event, a.fc-event:hover {color: #fff !important;}
 
 /* End Bootstrap 4 Style
 ---------------------------------------------------- */
