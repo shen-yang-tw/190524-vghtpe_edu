@@ -3,7 +3,7 @@
 .color_primary_dark {color: #003466 !important;}
 .link a:link, .link a:visited, .link a:focus, .uk-breadcrumb a:link, .uk-breadcrumb a:visited, .uk-breadcrumb a:focus, a.color_primary:hover, a.color_primary:hover>*, .color_primary a:hover {color: #2d8abf !important;}
 
-.color_secondary, .color_secondary>*, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover, nav:not(.bg_white).color_secondary>.uk-button-dropdown>a.active, nav.color_secondary_dark .uk-button-dropdown.uk-open>a, nav.color_secondary_dark .uk-button-dropdown>a:hover {color: #f9a04c !important;}
+.color_secondary, .color_secondary>*, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover, nav:not(.bg_white).color_secondary>.uk-button-dropdown>a:hover, nav:not(.bg_white).color_secondary>.uk-button-dropdown>a.active, nav.color_secondary_dark .uk-button-dropdown.uk-open>a, nav.color_secondary_dark .uk-button-dropdown>a:hover {color: #f9a04c !important;}
 a.color_secondary:hover, a.color_secondary:hover>*, .color_secondary_dark a:hover, .color_secondary_dark :hover {color: #d66800 !important;}
 .color_secondary_dark  {color: #ee7502 !important;}
 
@@ -65,11 +65,9 @@ input#search {
 }
 
 .fc-event, .fc-event-dot {background-color: #3093CC;}
-.fc-event {border: none; padding: 0 5px}
+.fc-event {border: none; padding: 0 5px !important;}
 .fc-scroller {height: auto !important;}
 .fc-unthemed td.fc-today {background: #eaeaea; font-weight: 900;}
-@media (max-width:479px) {
-}
 @media (max-width:767px) {
 .fc-toolbar {flex-wrap: wrap;}
 .fc-toolbar>*>* {margin: 5px 0;}
