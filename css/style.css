@@ -77,6 +77,8 @@ input#search {
 .fc-button {padding: .4em .49em; font-size: .84em !important;}
 }
 
+.striped_dark.uk-list-striped>li:nth-of-type(odd) {background: #e2e2e2;}
+
 footer, footer a {color: white !important;}
 
 /* Uikit Style
@@ -110,6 +112,7 @@ footer, footer a {color: white !important;}
 .bg_primary .max_height:after {background: linear-gradient(to top, #3093CC 85%, rgba(255, 255, 255, 0) 100%);}
 .bg_secondary .max_height:after {background: linear-gradient(to top, #ee7502 85%, rgba(255, 255, 255, 0) 100%);}
 .uk-hidden-medium h2 {background-color: white;}
+.menuBar {min-height: 40px;}
 }
 
 /*bs-lg*/
