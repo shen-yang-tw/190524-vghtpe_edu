@@ -77,7 +77,7 @@ input#search {
 .fc-button {padding: .4em .49em; font-size: .84em !important;}
 }
 
-.striped_dark.uk-list-striped>li:nth-of-type(odd) {background: #e2e2e2;}
+.striped_lightBule.uk-list-striped>li:nth-of-type(odd) {background: #e5f3fb;}
 
 footer, footer a {color: white !important;}
 

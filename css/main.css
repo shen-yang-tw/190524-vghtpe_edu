@@ -92,6 +92,7 @@ input.color_white::-ms-input-placeholder, textarea.color_white::-ms-input-placeh
 .color_black, .color_black>*, .hover_color_black:focus, .hover_color_black:hover {color: #000 !important;}
 .color_defaultGrey, .color_defaultGrey>*, .hover_color_defaultGrey:focus, .hover_color_defaultGrey:hover {color: #999 !important}
 .color_grey, .color_grey>*, .hover_color_grey:focus, .hover_color_grey:hover {color: #adb9bd !important;}
+.color_lightgrey, .color_lightgrey *, .hover_color_lightgrey:focus, .hover_color_lightgrey:hover {color: lightgrey !important}
 
 .color_primary, .color_primary>*, .hover_color_primary:focus, .hover_color_primary:hover {color: #009dd8 !important;}
 .color_secondary, .color_secondary>*, .hover_color_secondary:focus, .hover_color_secondary:hover {color: #82bb42 !important;}
@@ -124,7 +125,8 @@ input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:b
 
 .bg_grey, .btn_grey {background-color: #e9f3f5 !important;}
 .btn_grey:focus, .btn_grey:hover {background-color: #e3edef;}
-.bg_lightGrey, .btn_lightGrey {background-color: #e7f1f5 !important;}
+.bg_lightGrey, .btn_lightGrey {background-color: lightgrey !important;}
+.bg_lightBlueGrey, .btn_lightBlueGrey {background-color: #e7f1f5 !important;}
 .bg_darkGrey, .btn_darkGrey {background-color: #a9c6cc !important;}
 .bg_darkerGrey, .bg_hover_darkerGrey:hover, .btn_darkerGrey {background-color: #657e84 !important;}
 .bg_darkestGrey, .btn_darkestGrey {background-color: #445356 !important;}
