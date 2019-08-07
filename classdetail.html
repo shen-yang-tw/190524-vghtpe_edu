@@ -31,7 +31,7 @@
 <body id="top" class="min_height100vh bg_grey p-0">
   <div class="gotoTop uk-visible-small" data-uk-sticky="{top:-250, animation: 'uk-animation-slide-top'}"><a href="#top" title="Go to top"><i class="fas fa-chevron-up fa-fw"></i></a></div>
   <header id="header" class="bg_white">
-  <!-- <header id="header" class="bg_white" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom', media: '(max-width: 959px)'}"> -->
+    <!-- <header id="header" class="bg_white" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom', media: '(max-width: 959px)'}"> -->
     <div class="p-0 uk-container uk-container-center">
       <div class="uk-grid uk-grid-collapse" data-uk-grid-margin>
         <div class="bg_primary p-2 uk-width-large-1-4">
@@ -121,9 +121,6 @@
           <a class="fontSize1_2 font-weight-bold px-3 py-2" href="myclass.html" title="#">我的報名課程</a>
         </div>
         <div class="uk-button-dropdown" data-uk-dropdown>
-          <a class="fontSize1_2 font-weight-bold px-3 py-2" href="#" title="#">我的審查課程</a>
-        </div>
-        <div class="uk-button-dropdown" data-uk-dropdown>
           <a class="fontSize1_2 font-weight-bold px-3 py-2" href="study.html" title="#">學習成果</a>
         </div>
         <div class="uk-button-dropdown" data-uk-dropdown>
@@ -151,7 +148,7 @@
         </ul>
         <a class="color_secondary_dark uk-margin-bottom uk-align-right uk-visible-large" href="#" title="#" hidden>帳號：<span>a123</span></a>
       </div>
-      <div class="uk-panel uk-panel-box">
+      <div id="content" class="uk-panel uk-panel-box">
         <h3 class="fontSizeH3 color_secondary_dark font-weight-bold uk-margin-small">CbD教學評量-護理經驗分享</h3>
         <h4 class="fontSizeH5 font-weight-bold uk-margin-small">2019-01-29（二） 12:15 至 2019-02-25（一） 09:00</h4>
         <p class="urlFix uk-text-truncate uk-margin-small"><small class="mr-1 badge badge-pill badge-secondary">課程性質</small>評估技巧</p>
@@ -164,7 +161,7 @@
         </div>
         <div>
           <dt class="border px-1 mb-1 font-weight-normal">所屬班別</dt>
-          <dd class="urlFix">臺北榮民總醫院「正念工作坊」</dd>
+          <dd class="urlFix"><a class="linkline" href="#class" data-uk-modal="{center:true}">臺北榮民總醫院「正念工作坊」</a></dd>
         </div>
         <div class="uk-width-1-1">
           <dt class="border px-1 mb-1 font-weight-normal">課程內容</dt>
@@ -229,6 +226,74 @@
     <!-- .uk-container -->
   </div>
   <!-- .bg_img -->
+  <div id="class" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a href="" class="uk-modal-close uk-close" title="關閉" aria-label="關閉"></a>
+      <div class="uk-modal-header">
+        <h4>臺北榮民總醫院「正念工作坊」</h4>
+      </div>
+      <dl class="dl_columns uk-description-list-horizontal uk-margin uk-grid uk-grid-small uk-grid-width-small-1-2" data-uk-grid-margin>
+        <div>
+          <dt class="border px-1 mb-1 font-weight-normal">班別代碼</dt>
+          <dd class="urlFix">abc123</dd>
+        </div>
+        <div>
+          <dt class="border px-1 mb-1 font-weight-normal">開課單位</dt>
+          <dd class="urlFix">職業安全衛生室</dd>
+        </div>
+        <div class="uk-width-1-1">
+          <dt class="border px-1 mb-1 font-weight-normal">課程類型</dt>
+          <dd class="urlFix">全院開課</dd>
+        </div>
+        <div class="uk-width-1-1">
+          <dt class="border px-1 mb-1 font-weight-normal">班別簡介</dt>
+          <dd class="urlFix">1. 藉由課堂講授與實際操作，對於健康生活方式能夠有行為階段的進步 2. 推廣健康飲食，了解食材、烹飪方式與份量，持有正確的飲食觀 3. 知悉運動與良好體適能對健康的益處以及能夠安排正確的運動方式 4. 體認到健康生活方式對疾病預防進而健康促進實為中心作法</dd>
+        </div>
+        <!-- <div class="uk-width-1-1">
+          <dt class="border px-1 mb-1 font-weight-normal">認證時數</dt>
+          <dd class="urlFix">此班別須上足 2 小時始按實際上課時數給予終身學習認證時數</dd>
+        </div> -->
+        <div class="uk-width-1-1">
+          <dt class="border px-1 mb-1 font-weight-normal">開辦日期</dt>
+          <dd class="urlFix"><time class="ifEmpty">從 2019-06-17（一） 16:00 至 2019-08-22（四） 20:00</time></dd>
+        </div>
+      </dl>
+      <hr>
+      <div class="uk-overflow-container">
+        <table class="uk-table uk-table-striped uk-text-nowrap">
+          <thead>
+            <tr>
+              <th class="uk-text-center uk-width-1-6">課程代碼</th>
+              <th class="uk-text-center uk-width-3-6">課程名稱</th>
+              <th class="uk-text-center uk-width-2-6">開課時間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>123456</td>
+              <td><a class="uk-modal-close" href="#content">CbD教學評量-護理經驗分享(一)</a></td>
+              <td><time>2019-05-06（一）19:30</time></td>
+            </tr>
+            <tr>
+              <td>123457</td>
+              <td><a class="color_primary" href="#" target="_blank">CbD教學評量-護理經驗分享(二)</a></td>
+              <td><time>2019-05-07（一）19:30</time></td>
+            </tr>
+            <tr>
+              <td>123458</td>
+              <td><a class="color_primary" href="#" target="_blank">CbD教學評量-護理經驗分享(三)</a></td>
+              <td><time>2019-05-08（一）19:30</time></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button type="button" class="uk-button uk-modal-close uk-button-large">取　　消</button>
+        <button type="button" class="btn_primary uk-button uk-button-large">確　　定</button>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal -->
   <footer class="bg_darkGrey_dotPattern p-3">
     <div class="uk-container uk-container-center">
       <div class="d-flex flex-column flex-md-row justify-content-center">
