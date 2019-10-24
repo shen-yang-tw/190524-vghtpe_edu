@@ -166,25 +166,90 @@
         <div class="uk-hidden-small uk-width-medium-3-10 uk-width-large-1-4 uk-width-xlarge-3-10">
           <nav>
             <ul class="nav_secondary uk-nav uk-nav-side uk-nav-parent-icon">
-              <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-book-open fa-fw"></i>課程類型</li>
-              <li class="uk-active"><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>全院開課 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>單位開課 <span class="parentheses uk-text-small">10</span></a></li>
-              <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-book-reader fa-fw"></i>上課方式</li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>實體上課 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>數位學習 <span class="parentheses uk-text-small">10</span></a></li>
-              <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-th fa-fw"></i>課程性質</li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教師培育科 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>醫院感染管制委員會 <span class="parentheses uk-text-small">10</span></a></li>
-              <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-file fa-fw"></i>開課單位</li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教學部 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>藥學部 <span class="parentheses uk-text-small">10</span></a></li>
-              <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-calendar-check fa-fw"></i>日期搜尋</li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>本日活動 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>3日內活動 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一週內活動 <span class="parentheses uk-text-small">10</span></a></li>
-              <li><a class="hover_color_secondary" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一個月的活動 <span class="parentheses uk-text-small">10</span></a></li>
+              <li>
+                <ul class="uk-padding-remove">
+                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-book-open fa-fw"></i>課程類型</li>
+                  <li class="uk-active"><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>全院開課 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>單位開課 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li>
+                    <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="uk-padding-remove">
+                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-book-reader fa-fw"></i>教學方式</li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>實體上課 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>數位學習 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li>
+                    <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="uk-padding-remove">
+                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-th fa-fw"></i>課程性質</li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教師培育科 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>醫院感染管制委員會 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li>
+                    <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="uk-padding-remove">
+                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-file fa-fw"></i>開課單位</li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教學部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>藥學部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li>
+                    <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="uk-padding-remove">
+                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-calendar-check fa-fw"></i>日期搜尋</li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>本日課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>3日內課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一週內課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一個月的課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li>
+                    <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                  <li class="listMore uk-hidden">
+                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
@@ -203,7 +268,7 @@
             </div>
             <div>
               <div class="w-100 uk-button-dropdown" data-uk-dropdown>
-                <button class="line_height1 w-100 py-1 uk-button">上課方式 <i class="uk-icon-caret-down"></i></button>
+                <button class="line_height1 w-100 py-1 uk-button">教學方式 <i class="uk-icon-caret-down"></i></button>
                 <div class="uk-dropdown uk-dropdown-small">
                   <ul class="nav_secondary uk-nav uk-nav-dropdown">
                     <li><a href="#">實體上課</a></li>
@@ -241,10 +306,10 @@
                 <button class="line_height1 w-100 py-1 uk-button">日期搜尋 <i class="uk-icon-caret-down"></i></button>
                 <div class="uk-dropdown uk-dropdown-small">
                   <ul class="nav_secondary uk-nav uk-nav-dropdown">
-                    <li><a href="#">本日活動</a></li>
-                    <li><a href="#">3日內活動</a></li>
-                    <li><a href="#">一週內活動</a></li>
-                    <li><a href="#">一個月的活動</a></li>
+                    <li><a href="#">本日課程</a></li>
+                    <li><a href="#">3日內課程</a></li>
+                    <li><a href="#">一週內課程</a></li>
+                    <li><a href="#">一個月的課程</a></li>
                   </ul>
                 </div>
               </div>
@@ -377,17 +442,7 @@
   <footer class="bg_darkGrey_dotPattern p-3">
     <div class="uk-container uk-container-center">
       <div class="d-flex flex-column flex-md-row justify-content-center">
-        <div class="text-center text-md-left mx-md-2 mx-lg-4">
-          <span class="d-block">版權所有 © <span>臺北榮民總醫院</span></span>
-          <span class="d-block"><a class="linkline hover_color_white" href="#">隱私權及資訊安全政策</a></span>
-        </div>
-        <div class="text-center text-md-left mx-md-2 mx-lg-4">
-          <span class="d-block">聯絡地址：<a class="linkline hover_color_white" href="#">11217臺北市北投區石牌路二段201號</a></span>
-          <span class="d-block">聯絡電話：<a class="linkline hover_color_white" href="#">02-28757434 # 310</a></span>
-        </div>
-        <div class="text-center text-md-left mx-md-2 mx-lg-4">
-          <span class="d-block">聯絡信箱：<a class="linkline hover_color_white" href="mailto:abc@vghtpe.gov.tw">abc@vghtpe.gov.tw</a></span>
-        </div>
+        <div class="text-center">Copyright © 2020 Taipei Veterans General Hospital</div>
       </div>
     </div>
   </footer>

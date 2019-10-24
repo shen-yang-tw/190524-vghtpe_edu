@@ -91,6 +91,8 @@ footer, footer a {color: white !important;}
 /* End Uikit Style
 ---------------------------------------------------- */
 
+.uk-nav.nav_secondary li a.btnMore:hover, .uk-nav.nav_secondary li a.btnMore:focus {color: black !important; background-color: white !important; text-decoration: underline !important;}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
 
 /*uk-small*/
