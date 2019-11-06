@@ -76,9 +76,9 @@
     <div id="offcanvas" class="uk-offcanvas">
       <nav class="uk-offcanvas-bar bg_primary">
         <ul class="uk-nav uk-nav-parent-icon uk-nav-offcanvas uk-text-contrast" data-uk-nav>
-          <li class="uk-parent">
+          <li class="uk-parent uk-margin-remove uk-padding-remove">
             <a href="#" title="#">個人首頁</a>
-            <ul class="uk-nav-sub">
+            <ul class="uk-nav-sub uk-padding-remove">
               <li><a href="#" title="#">Item</a></li>
               <li><a href="#" title="#">Item</a></li>
             </ul>
@@ -139,14 +139,38 @@
   </header>
   <div class="bg_img">
     <div class="bg_secondary uk-container uk-container-center">
-      <form class="px-0 py-2 uk-form">
-        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+      <form class="px-0 py-2 position-relative uk-form">
+        <div class="uk-grid uk-flex uk-flex-space-between uk-grid-collapse" data-uk-grid-margin>
           <div class="uk-width-5-6">
-            <input class="border-0 uk-width-1-1" type="text" placeholder="請輸入課程序號、課程名稱">
+            <input id="search" class="border-0 uk-width-1-1" type="text" placeholder="請輸入課程名稱、上課地點或開課單位">
           </div>
-          <div class="uk-width-1-6 uk-vertical-align">
-            <div class="w-100 h-100 uk-vertical-align-middle">
-              <a class="fontSizeM1_4 text-light bg-transparent border-0  h-100 uk-flex uk-flex-middle" href="#" title="搜尋" aria-label="search" role="button"><i class="fas fa-search"></i></a>
+          <div class="uk-width-1-6">
+            <div class="w-100 h-100 uk-flex">
+              <a class="fontSizeM1_2 color_secondary_dark bg-white rounded-right px-2 uk-flex uk-flex-middle uk-flex-center" href="#" title="進階篩選" aria-label="plus" role="button" data-uk-toggle="{target:'.toggle'}"><span class="toggle m-0"><i class="fas fa-plus-square"></i></span><span class="toggle m-0 uk-hidden"><i class="fas fa-minus-square"></i></span></a>
+              <a class="fontSizeM1_4 text-light px-1 px-sm-3 uk-flex uk-flex-middle uk-flex-center" href="#" title="搜尋" aria-label="search" role="button"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+          <div class="uk-width-1-1">
+            <div class="toggle form_white mt-2 w-100 uk-flex uk-flex-wrap uk-hidden" data-uk-margin>
+              <div class="mr-3">
+                <span class="uk-form-label">類別1</span>
+                <div class="uk-form-controls" data-uk-margin>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                </div>
+              </div>
+              <div class="mr-3">
+                <span class="uk-form-label">類別2</span>
+                <div class="uk-form-controls" data-uk-margin>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                  <label class="mr-2"><input class="mr-1" type="checkbox">option</label>
+                </div>
+              </div>
+              <div class="mr-3"><button class="uk-button" type="reset" value="Reset">清除所選</button></div>
             </div>
           </div>
         </div>
@@ -164,89 +188,89 @@
       </div>
       <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-hidden-small uk-width-medium-3-10 uk-width-large-1-4 uk-width-xlarge-3-10">
-          <nav>
-            <ul class="nav_secondary uk-nav uk-nav-side uk-nav-parent-icon">
-              <li>
-                <ul class="uk-padding-remove">
-                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-book-open fa-fw"></i>課程類型</li>
-                  <li class="uk-active"><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>全院開課 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>單位開課 <span class="parentheses uk-text-small">10</span></a></li>
+          <nav class="listTabs listTabs_secondary listTabs_noborder">
+            <ul class="uk-nav uk-nav-parent-icon uk-margin-remove" data-uk-nav="{multiple:true}">
+              <li class="uk-parent uk-margin-remove uk-padding-remove uk-active">
+                <a class="uk-text-bold" href="#"><i class="mr-1 fas fa-book-open fa-fw"></i>課程類型</a>
+                <ul class="uk-nav-sub uk-padding-remove">
+                  <li class="uk-active"><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>全院開課 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>單位開課 <span class="parentheses uk-text-small">10</span></a></li>
                   <li>
                     <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <ul class="uk-padding-remove">
-                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-book-reader fa-fw"></i>教學方式</li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>實體上課 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>數位學習 <span class="parentheses uk-text-small">10</span></a></li>
+              <li class="uk-parent uk-margin-remove uk-padding-remove">
+                <a class="uk-text-bold" href="#"><i class="mr-1 fas fa-book-reader fa-fw"></i>教學方式</a>
+                <ul class="uk-nav-sub uk-padding-remove">
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>實體上課 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>數位學習 <span class="parentheses uk-text-small">10</span></a></li>
                   <li>
                     <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <ul class="uk-padding-remove">
-                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-th fa-fw"></i>課程性質</li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教師培育科 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>醫院感染管制委員會 <span class="parentheses uk-text-small">10</span></a></li>
+              <li class="uk-parent uk-margin-remove uk-padding-remove">
+                <a class="uk-text-bold" href="#"><i class="mr-1 fas fa-th fa-fw"></i>課程性質</a>
+                <ul class="uk-nav-sub uk-padding-remove">
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教師培育科 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>醫院感染管制委員會 <span class="parentheses uk-text-small">10</span></a></li>
                   <li>
                     <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <ul class="uk-padding-remove">
-                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-file fa-fw"></i>開課單位</li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教學部 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>藥學部 <span class="parentheses uk-text-small">10</span></a></li>
+              <li class="uk-parent uk-margin-remove uk-padding-remove">
+                <a class="uk-text-bold" href="#"><i class="mr-1 fas fa-file fa-fw"></i>開課單位</a>
+                <ul class="uk-nav-sub uk-padding-remove">
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>教學部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>護理部 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>藥學部 <span class="parentheses uk-text-small">10</span></a></li>
                   <li>
                     <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <ul class="uk-padding-remove">
-                  <li class="fontSize1_2 uk-nav-header"><i class="mr-1 fas fa-calendar-check fa-fw"></i>日期搜尋</li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>本日課程 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>3日內課程 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一週內課程 <span class="parentheses uk-text-small">10</span></a></li>
-                  <li><a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一個月的課程 <span class="parentheses uk-text-small">10</span></a></li>
+              <li class="uk-parent uk-margin-remove uk-padding-remove">
+                <a class="uk-text-bold" href="#"><i class="mr-1 fas fa-calendar-check fa-fw"></i>日期搜尋</a>
+                <ul class="uk-nav-sub uk-padding-remove">
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>本日課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>3日內課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一週內課程 <span class="parentheses uk-text-small">10</span></a></li>
+                  <li><a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>一個月的課程 <span class="parentheses uk-text-small">10</span></a></li>
                   <li>
                     <a class="listMore btnMore uk-text-small uk-text-right" href="#" title="#" onclick="toggleAllClass(findChildren(findParent(this, 'UL'), '.listMore'), 'uk-hidden'); return false;">More</a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                   <li class="listMore uk-hidden">
-                    <a class="hover_color_secondary px-3 py-1" href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
+                    <a href="#"><i class="uk-icon-justify uk-icon-angle-double-right"></i>Tab <span class="parentheses uk-text-small">10</span></a>
                   </li>
                 </ul>
               </li>
@@ -586,6 +610,7 @@
   <script src="js/core/smooth-scroll.min.js "></script>
   <script src="js/core/dropdown.min.js"></script>
   <script src="js/core/modal.min.js"></script>
+  <script src="js/core/nav.min.js"></script>
   <script src="js/core/tab.min.js"></script>
   <script src="js/components/accordion.min.js"></script>
   <script src="js/components/grid.min.js"></script>
