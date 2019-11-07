@@ -158,8 +158,6 @@ header.uk-active {box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;}
 #chart {margin-top: 10%; margin-bottom: 10% !important;}
 #chart svg {transform: scale(1.2);}
 
-.uk-hidden-medium h2 {background-color: #e7f1f5;}
-
 input#search {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -180,6 +178,27 @@ input#search {
 }
 
 .striped_lightBule.uk-list-striped>li:nth-of-type(odd) {background: #e5f3fb;}
+
+.menuBar nav a.active, .menuBar nav a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#header, #header>:first-child {position: relative;}
+#header::before {
+  background: url(../img/bg_header.jpg) no-repeat center center;
+  background-size: cover;
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: .1;
+}
+#header>:first-child .bg_primary {
+  background: transparent !important;
+}
 
 footer, footer a {color: white !important;}
 footer.bg_darkGrey_dotPattern {
@@ -218,8 +237,9 @@ footer.bg_darkGrey_dotPattern {
 .listTabs .uk-grid-divider.uk-grid-width-large-1-1>li:nth-child(even) {border-right: 0;}
 .bg_primary .max_height:after {background: linear-gradient(to top, #2196f3 85%, rgba(255, 255, 255, 0) 100%);}
 .bg_secondary .max_height:after {background: linear-gradient(to top, #FF9800 85%, rgba(255, 255, 255, 0) 100%);}
-.uk-hidden-medium h2 {background-color: white;}
 .menuBar {min-height: 40px;}
+.min_height1 {min-height: 328px;}
+.min_height2 {min-height: 356px;}
 }
 
 /*bs-lg*/
@@ -228,6 +248,8 @@ footer.bg_darkGrey_dotPattern {
 
 /*bs-xl*/
 @media (min-width: 1200px) {
+.min_height1 {min-height: 272px;}
+.min_height2 {min-height: 284px;}
 }
 
 /*uk-xlarge*/

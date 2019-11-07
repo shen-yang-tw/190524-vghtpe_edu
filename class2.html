@@ -115,10 +115,10 @@
           </div>
         </div>
         <div class="uk-button-dropdown" data-uk-dropdown>
-          <a class="fontSize1_2 font-weight-bold px-3 py-2" href="class.html" title="#">課程瀏覽</a>
+          <a class="active fontSize1_2 font-weight-bold px-3 py-2" href="class.html" title="#">課程瀏覽</a>
         </div>
         <div class="uk-button-dropdown" data-uk-dropdown>
-          <a class="fontSize1_2 font-weight-bold px-3 py-2" href="myclass.html" title="#">我的報名課程</a>
+          <a class="fontSize1_2 font-weight-bold px-3 py-2" href="#" title="#">我的報名課程</a>
         </div>
         <div class="uk-button-dropdown" data-uk-dropdown>
           <a class="fontSize1_2 font-weight-bold px-3 py-2" href="study.html" title="#">學習成果</a>
@@ -138,20 +138,6 @@
     <!-- .menuBar -->
   </header>
   <div class="bg_img">
-    <div class="bg_secondary uk-container uk-container-center">
-      <form class="px-0 py-2 uk-form">
-        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-          <div class="uk-width-5-6">
-            <input class="border-0 uk-width-1-1" type="text" placeholder="請輸入標題、公告單位、課程名稱、課程系統編號">
-          </div>
-          <div class="uk-width-1-6 uk-vertical-align">
-            <div class="w-100 h-100 uk-vertical-align-middle">
-              <a class="fontSizeM1_4 text-light bg-transparent border-0  h-100 uk-flex uk-flex-middle" href="#" title="搜尋" aria-label="search" role="button"><i class="fas fa-search"></i></a>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
     <div class="min_height100vh py-3 bg_white uk-container uk-container-center">
       <div class="uk-clearfix">
         <ul class="uk-breadcrumb uk-align-left uk-visible-large">
@@ -162,7 +148,64 @@
         </ul>
         <a class="color_secondary_dark uk-margin-bottom uk-align-right uk-visible-large" href="#" title="#" hidden>帳號：<span>a123</span></a>
       </div>
-      <h3 class="mt-0 mb-2">公佈欄</h3>
+      <h3 class="mt-0 mb-2">課程瀏覽</h3>
+      <form class="px-0 py-2 uk-form">
+        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+          <div class="uk-width-5-6">
+            <input class="uk-width-1-1" type="text" placeholder="請輸入課程名稱">
+          </div>
+          <div class="uk-width-1-6">
+            <a class="fontSizeM1_4 btn_primary w-100 h-100 uk-button uk-button-primary" href="#" title="搜尋" aria-label="search" role="button"><i class="h-100 fas fa-search"></i></a>
+          </div>
+          <div class="widthAutoL uk-width-1-1"><label class="d-block d-md-inline-block">進階篩選：</label></div>
+          <div>
+            <select>
+              <option>-課程類型-</option>
+              <option>全院開課</option>
+              <option>單位開課</option>
+            </select>
+          </div>
+          <div>
+            <select>
+              <option>-教學方式-</option>
+              <option>實體課程</option>
+              <option>數位課程</option>
+            </select>
+          </div>
+          <div>
+            <select>
+              <option>-課程性質-</option>
+              <option>教學能力</option>
+              <option>感染管制</option>
+              <option>職業安全</option>
+            </select>
+          </div>
+          <div>
+            <select>
+              <option>-開課單位-</option>
+              <option>教學部</option>
+              <option>護理部</option>
+              <option>藥學部</option>
+            </select>
+          </div>
+          <div>
+            <select>
+              <option>-日期搜尋-</option>
+              <option>本日課程</option>
+              <option>3日內課程</option>
+              <option>一週內課程</option>
+              <option>一個月的課程</option>
+            </select>
+          </div>
+          <div>
+            <select>
+              <option>-關鍵字-</option>
+              <option>option</option>
+              <option>option</option>
+            </select>
+          </div>
+        </div>
+      </form>
       <div class="pagination uk-form uk-margin">
         <div class="m-auto uk-width-medium-2-3 uk-flex uk-flex-space-between uk-flex-middle uk-flex-center">
           <div>
@@ -189,58 +232,100 @@
       <ul class="uk-list uk-list-line">
         <li class="uk-hidden-small">
           <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-medium-2-6 uk-width-large-4-10"><small class="bg_blackOpacity08 badge text-secondary">標題</small></div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-2-10"><small class="bg_blackOpacity08 badge text-secondary">公告單位</small></div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-2-10"><small class="bg_blackOpacity08 badge text-secondary">課程名稱</small></div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-1-10"><small class="bg_blackOpacity08 badge text-secondary">刊登者</small></div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-1-10"><small class="bg_blackOpacity08 badge text-secondary">刊登日期</small></div>
+            <div class="uk-width-medium-2-10"><small class="bg_blackOpacity08 badge text-secondary">課程起訖</small></div>
+            <div class="uk-width-medium-2-10"><small class="bg_blackOpacity08 badge text-secondary">課程名稱</small></div>
+            <div class="uk-width-1-2 uk-width-medium-1-10"><small class="bg_blackOpacity08 badge text-secondary">課程地點</small></div>
+            <div class="uk-width-1-2 uk-width-medium-2-10"><small class="bg_blackOpacity08 badge text-secondary">課程性質</small></div>
+            <div class="uk-width-1-2 uk-width-medium-1-10"><small class="bg_blackOpacity08 badge text-secondary">時數</small></div>
+            <div class="uk-width-1-2 uk-width-medium-1-10"><small class="bg_blackOpacity08 badge text-secondary">狀態</small></div>
+            <div class="uk-width-1-2 uk-width-medium-1-10"><small class="bg_blackOpacity08 badge text-secondary">其它操作</small></div>
           </div>
         </li>
-        <li>
+        <li class="p-2 py-3" data-uk-alert>
           <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-medium-2-6 uk-width-large-4-10">
-              <!-- <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">標題</small> -->
-              <a class="color_primary d-inline" href="newsdetail.html">最開物都作下試難線有主立關了的中愛廠從為燈嚴色部</a>
+            <div class="uk-width-medium-2-10">
+              <!-- <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">課程起訖時間</small> -->
+              <time class="tilde">2019-05-06（一）19:30</time><time class="tilde">2019-05-06（一）21:30</time>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-2-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">公告單位</small>
-              <span>醫院感染管制委員會</span>
+            <div class="uk-width-medium-2-10">
+              <!-- <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">標題</small> -->
+              <a class="color_primary d-inline" href="classdetail.html">最開物都作下試難線有主立關了的中愛廠從為燈嚴色部</a>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-2-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">課程名稱</small>
-              <span>臨床抗生素使用一點通</span>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">課程地點</small>
+              <span>醫學科技大樓會議室/孝威館一樓/致四會議室</span>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-1-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">刊登者</small>
-              <span>系統管理員</span>
+            <div class="uk-width-1-2 uk-width-medium-2-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">課程性質</small>
+              <span>實證醫學/感染管制</span>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-1-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">刊登日期</small>
-              <time>2019/7/1</time>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">時數</small>
+              <span>2</span>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">狀態</small>
+              <small>不報名</small>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <button class="btn_secondary mb-2 px-1 uk-button" data-uk-modal="{target: '#remove1', center:true}">取消報名</button>
+              <a class="btn_primary mb-2 px-1 uk-button" href="classdetail.html">檢視課程</a>
+            </div>
+          </div>
+          <div id="remove1" class="uk-modal">
+            <div class="uk-modal-dialog">
+              <a href="" class="uk-modal-close uk-close" title="關閉" aria-label="關閉"></a>
+              <div class="uk-modal-header">
+                <h4>確定取消？</h4>
+              </div>
+              <div class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+                <div><button class="btn_primary w-100 uk-button uk-button-large uk-alert-close uk-modal-close">確　　定</button></div>
+                <div><button class="btn_secondary w-100 uk-button uk-button-large uk-modal-close">關　　閉</button></div>
+              </div>
             </div>
           </div>
         </li>
-        <li>
+        <li class="p-2 py-3" data-uk-alert>
           <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-medium-2-6 uk-width-large-4-10">
-              <!-- <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">標題</small> -->
-              <a class="color_primary d-inline" href="newsdetail.html">最開物都作下試難線有主立關了的中愛廠從為燈嚴色部</a>
+            <div class="uk-width-medium-2-10">
+              <!-- <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">課程起訖時間</small> -->
+              <time class="tilde">2019-05-06（一）19:30</time><time class="tilde">2019-05-06（一）21:30</time>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-2-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">公告單位</small>
-              <span>醫院感染管制委員會</span>
+            <div class="uk-width-medium-2-10">
+              <!-- <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">標題</small> -->
+              <a class="color_primary d-inline" href="classdetail.html">最開物都作下試難線有主立關了的中愛廠從為燈嚴色部</a>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-2-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">課程名稱</small>
-              <span>臨床抗生素使用一點通</span>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">課程地點</small>
+              <span>醫學科技大樓會議室/孝威館一樓/致四會議室</span>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-1-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">刊登者</small>
-              <span>系統管理員</span>
+            <div class="uk-width-1-2 uk-width-medium-2-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">課程性質</small>
+              <span>實證醫學/感染管制</span>
             </div>
-            <div class="uk-width-small-1-2 uk-width-medium-1-6 uk-width-large-1-10">
-              <small class="bg_blackOpacity08 badge text-secondary uk-visible-small">刊登日期</small>
-              <time>2019/7/1</time>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">時數</small>
+              <span>2</span>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <small class="bg_blackOpacity08 badge text-secondary d-block uk-visible-small">狀態</small>
+              <small>開始報名</small>
+            </div>
+            <div class="uk-width-1-2 uk-width-medium-1-10">
+              <button class="btn_secondary mb-2 px-1 uk-button" data-uk-modal="{target: '#remove2', center:true}">取消報名</button>
+              <a class="btn_primary mb-2 px-1 uk-button" href="classdetail.html">檢視課程</a>
+            </div>
+          </div>
+          <div id="remove2" class="uk-modal">
+            <div class="uk-modal-dialog">
+              <a href="" class="uk-modal-close uk-close" title="關閉" aria-label="關閉"></a>
+              <div class="uk-modal-header">
+                <h4>確定取消？</h4>
+              </div>
+              <div class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+                <div><button class="btn_primary w-100 uk-button uk-button-large uk-alert-close uk-modal-close">確　　定</button></div>
+                <div><button class="btn_secondary w-100 uk-button uk-button-large uk-modal-close">關　　閉</button></div>
+              </div>
             </div>
           </div>
         </li>
