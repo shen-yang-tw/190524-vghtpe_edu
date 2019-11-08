@@ -199,6 +199,44 @@ input#search {
 #header>:first-child .bg_primary {
   background: transparent !important;
 }
+.fstElement * {
+    font-size: 1rem;
+}
+.fstControls {
+    display: flex;
+    -ms-display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.fstElement input {
+    max-width: 100%;
+    min-width: 200px;
+}
+.select2-container {
+  height: 28px;
+}
+.select2-container .selection {
+  display: block;
+}
+.select2-container span {
+  margin: 0 !important;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+.select2-dropdown {
+    background-color: white;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051;
+}
 
 footer, footer a {color: white !important;}
 footer.bg_darkGrey_dotPattern {

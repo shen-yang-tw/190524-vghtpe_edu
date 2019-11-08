@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/components/slideshow.min.css">
   <link rel="stylesheet" href="css/fontawesome-5.2.0-all.min.css">
   <link rel="stylesheet" href="css/fontawesome-5.2.0-svg-with-js.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/animate-3.6.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/delay.css">
@@ -65,7 +66,6 @@
                   <li><a class="hover_color_secondary color_white" href="https://www.vghtpe.gov.tw/Index.action" target="_blank">醫院首頁</a></li>
                   <li><a class="hover_color_secondary color_white" href="https://wd.vghtpe.gov.tw/medu/Index.action" target="_blank">教學部首頁</a></li>
                   <li><a class="hover_color_secondary color_white" href="#logout" data-uk-modal="{center:true}">登出</a></li>
-                  <li><a class="hover_color_secondary color_white" href="#register" data-uk-modal="{center:true}">註冊</a></li>
                 </ul>
               </nav>
             </div>
@@ -159,21 +159,21 @@
           </div>
           <div class="widthAutoL uk-width-1-1"><label class="d-block d-md-inline-block">進階篩選：</label></div>
           <div>
-            <select>
+            <select class="select2">
               <option>-課程類型-</option>
               <option>全院開課</option>
               <option>單位開課</option>
             </select>
           </div>
           <div>
-            <select>
+            <select class="select2">
               <option>-教學方式-</option>
               <option>實體課程</option>
               <option>數位課程</option>
             </select>
           </div>
           <div>
-            <select>
+            <select class="select2">
               <option>-課程性質-</option>
               <option>教學能力</option>
               <option>感染管制</option>
@@ -181,7 +181,7 @@
             </select>
           </div>
           <div>
-            <select>
+            <select class="select2">
               <option>-開課單位-</option>
               <option>教學部</option>
               <option>護理部</option>
@@ -189,19 +189,12 @@
             </select>
           </div>
           <div>
-            <select>
+            <select class="select2">
               <option>-日期搜尋-</option>
               <option>本日課程</option>
               <option>3日內課程</option>
               <option>一週內課程</option>
               <option>一個月的課程</option>
-            </select>
-          </div>
-          <div>
-            <select>
-              <option>-關鍵字-</option>
-              <option>option</option>
-              <option>option</option>
             </select>
           </div>
         </div>
@@ -514,7 +507,12 @@
   <script src="js/components/slideshow.min.js "></script>
   <script src="js/components/slideshow-fx.min.js "></script>
   <script src="js/fontawesome-5.2.0-all.min.js "></script>
+  <script src="js/select2.min.js "></script>
+  <script src="js/select2.zh-TW.js "></script>
   <script src="js/script.js "></script>
+  <script>
+    $('.select2').select2({language: 'zh-TW'});
+  </script>
 </body>
 
 </html>
