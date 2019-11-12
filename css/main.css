@@ -6997,6 +6997,11 @@ textarea {min-height: 100px;}
     .text_center_sL {text-align: left;}
     .text_center_sR, .text_sR {text-align: right;}
     .widthAutoS {width: auto !important;}
+    .flex-item-1\@s {
+      -ms-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+    }
 }
 
 /*bs-sm*/
@@ -7018,6 +7023,11 @@ textarea {min-height: 100px;}
     .min_heightM600 {min-height: 600px;}
     .min_height100vhM {min-height: 100vh}
     .widthautoM {width: auto !important;}
+    .flex-item-1\@m {
+      -ms-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+    }
 }
 
 
