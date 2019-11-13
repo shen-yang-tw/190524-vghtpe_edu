@@ -26,7 +26,7 @@ q {font-style: normal; padding: 0 5px;}
 ---------------------------------------------------- */
 
 /* Link */
-a:not(.uk-close):link, a:not(.uk-close):visited, a:not(.uk-close):focus {color: #000; outline-color: transparent;}
+a:not(.uk-button):not(.uk-close):link, a:not(.uk-button):not(.uk-close):visited, a:not(.uk-button):not(.uk-close):focus {color: #000; outline-color: transparent;}
 a:hover, a:active, a:hover>span {text-decoration: underline;}
 /* a:hover {transition: all 500ms ease;} */
 .transition_disabled, [class*=uk-nav] a, [class*=uk-tab] a, .uk-pagination a {transition: none;}
@@ -6915,7 +6915,7 @@ input:not([type]).uk-form-large, input[type].uk-form-large, select.uk-form-large
 .form_white input[type=checkbox]:checked:before, .form_white input[type=checkbox]:indeterminate:before {color: white;}
 
 .uk-list ul {padding-left: 0px;}
-.uk-button {background: #ececec;}
+/* .uk-button {background: #ececec;} */
 .uk-tab li:not(.uk-active) a {color: #999;}
 .uk-tab.tab_primary li:not(.uk-active) a {color: inherit;}
 .uk-slider li>.border2>.uk-panel {padding: 1px;}
