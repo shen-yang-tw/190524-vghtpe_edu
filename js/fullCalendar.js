@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     locale: 'zh-tw',
-    plugins: [ 'dayGrid', 'timeGrid', 'list' ],
+    plugins: ['dayGrid', 'timeGrid', 'list'],
     defaultView: 'dayGridMonth',
     header: {
       left: 'prevYear,prev,next,nextYear today',
@@ -26,13 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
       custom3: {
         text: '增加',
         click: function() {
-          window.open('https://www.google.com/');
+          // window.open('https://www.google.com/');
+          var modal = UIkit.modal($("#add"), {center:true});
+          // var modal = UIkit.modal("#add");
+          if (modal.isActive()) {
+            modal.hide();
+          } else {
+            modal.show();
+          }
         }
       }
     },
     // events: 'https://fullcalendar.io/demo-events.json',
-    events: [
-      {
+    events: [{
         title: 'All Day Event',
         url: 'https://www.google.com/',
         start: '2019-05-01',

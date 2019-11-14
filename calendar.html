@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="fullcalendar/daygrid/main.min.css">
   <link rel="stylesheet" href="fullcalendar/list/main.min.css">
   <link rel="stylesheet" href="fullcalendar/timegrid/main.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/animate-3.6.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/delay.css">
@@ -152,7 +153,24 @@
         </ul>
         <a class="color_secondary_dark uk-margin-bottom uk-align-right uk-visible-large" href="#" title="#" hidden>帳號：<span>a123</span></a>
       </div>
-      <h3 class="mt-0 mb-2">行事曆</h3>
+      <h3 class="mt-0 mb-4">行事曆</h3>
+      <div class="uk-grid uk-grid-small uk-grid-match" data-uk-margin data-uk-grid-margin>
+        <div class="min_width-1/4!@m flex-item-1@m w-100">
+          <select class="select2">
+            <option>-課程類型-</option>
+            <option>全院開課</option>
+            <option>單位開課</option>
+          </select>
+        </div>
+        <div class="min_width-1/4!@m flex-item-1@m w-100">
+          <select class="select2">
+            <option>-課程性質-</option>
+            <option>教學能力</option>
+            <option>感染管制</option>
+            <option>職業安全</option>
+          </select>
+        </div>
+      </div>
       <div id="calendar" class="uk-margin"></div>
       <p class="mb-1">顏色說明：</p>
       <ul class="uk-list">
@@ -161,6 +179,53 @@
         <li><i class="color_secondary_dark mr-1 fas fa-square"></i>橘色底表示個人已報名成功但缺課紀錄。</li>
         <li><i class="text-danger mr-1 fas fa-square"></i>紅色底表示</li>
       </ul>
+      <div id="add" class="uk-modal">
+        <div class="uk-modal-dialog">
+          <a href="" class="uk-modal-close uk-close" title="關閉" aria-label="關閉"></a>
+          <div class="uk-modal-header">
+            <h4>增加訂閱</h4>
+          </div>
+          <div class="uk-form">
+            <!-- <textarea class="w-100" rows="5" placeholder=""></textarea> -->
+            <div class="select2multiple">
+              <div class="uk-grid uk-grid-small uk-grid-match" data-uk-margin data-uk-grid-margin>
+                <div class="min_width-1/4!@m flex-item-1@m w-100">
+                  <label class="uk-form-label">課程性質</label>
+                  <select class="select2" multiple="multiple">
+                    <option>教學能力</option>
+                    <option>感染管制</option>
+                    <option>職業安全</option>
+                  </select>
+                </div>
+                <div class="min_width-1/4!@m flex-item-1@m w-100">
+                  <label class="uk-form-label">開課單位</label>
+                  <select class="select2" multiple="multiple">
+                    <option>教學部</option>
+                    <option>護理部</option>
+                    <option>藥學部</option>
+                  </select>
+                </div>
+              </div>
+              <!-- <select class="select2" multiple="multiple">
+                <optgroup label="課程性質">
+                  <option>教學能力</option>
+                  <option>感染管制</option>
+                  <option>職業安全</option>
+                </optgroup>
+                <optgroup label="開課單位">
+                  <option>教學部</option>
+                  <option>護理部</option>
+                  <option>藥學部</option>
+                </optgroup>
+              </select> -->
+            </div>
+          </div>
+          <div class="uk-modal-footer uk-text-right">
+            <button type="button" class="uk-button uk-modal-close uk-button-large">取　　消</button>
+            <button type="button" class="btn_primary uk-button uk-button-large">確　　定</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- .uk-container -->
   </div>
@@ -331,9 +396,10 @@
   <script src="fullcalendar/interaction/main.min.js "></script>
   <script src="fullcalendar/timegrid/main.min.js "></script>
   <script src="js/fullcalendar.js "></script>
+  <script src="js/select2.min.js "></script>
   <script src="js/script.js "></script>
   <script>
-    //calendar
+    $('.select2').select2();
   </script>
 </body>
 

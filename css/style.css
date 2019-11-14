@@ -180,7 +180,7 @@ input#search {
 .striped_lightBule.uk-list-striped>li:nth-of-type(odd) {background: #e5f3fb;}
 
 .menuBar nav a.active, .menuBar nav a:hover {
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 #header, #header>:first-child {position: relative;}
@@ -200,20 +200,17 @@ input#search {
   background: transparent !important;
 }
 .fstElement * {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .fstControls {
-    display: flex;
-    -ms-display: flex;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
+  display: flex;
+  -ms-display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 }
 .fstElement input {
-    max-width: 100%;
-    min-width: 200px;
-}
-.select2-container {
-  height: 28px;
+  max-width: 100%;
+  min-width: 200px;
 }
 .select2-container .selection {
   display: block;
@@ -222,21 +219,35 @@ input#search {
   margin: 0 !important;
 }
 .select2-container--default .select2-selection--single {
-    background-color: #fff;
-    border: 1px solid #E5E5E5;
-    border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
 }
 .select2-dropdown {
-    background-color: white;
-    border: 1px solid #E5E5E5;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    left: -100000px;
-    width: 100%;
-    z-index: 1051;
+  background-color: white;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -100000px;
+  width: 100%;
+  z-index: 1051;
 }
+.select2 .dropdown-wrapper {
+    display: none;
+}
+.select2multiple .select2-container, .select2multiple .selection {
+  width: 100% !important;
+}
+.select2 * {
+  line-height: 1.5;
+  vertical-align: middle;
+}
+.uk-form .select2 input[type=search]:focus {
+  background: transparent;
+}
+
 
 footer, footer a {color: white !important;}
 footer.bg_darkGrey_dotPattern {
@@ -276,8 +287,8 @@ footer.bg_darkGrey_dotPattern {
 .bg_primary .max_height:after {background: linear-gradient(to top, #2196f3 85%, rgba(255, 255, 255, 0) 100%);}
 .bg_secondary .max_height:after {background: linear-gradient(to top, #FF9800 85%, rgba(255, 255, 255, 0) 100%);}
 .menuBar {min-height: 40px;}
-.min_height1 {min-height: 328px;}
-.min_height2 {min-height: 356px;}
+.min_height1 {min-height: 537px;}
+.min_height2 {min-height: 410px;}
 }
 
 /*bs-lg*/
@@ -286,7 +297,7 @@ footer.bg_darkGrey_dotPattern {
 
 /*bs-xl*/
 @media (min-width: 1200px) {
-.min_height1 {min-height: 272px;}
+.min_height1 {min-height: 326px;}
 .min_height2 {min-height: 284px;}
 }
 
