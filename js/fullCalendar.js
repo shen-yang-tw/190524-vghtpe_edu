@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
         text: '增加',
         click: function() {
           // window.open('https://www.google.com/');
-          var modal = UIkit.modal($("#add"), {center:true});
+          var modal = UIkit.modal($("#add"), {
+            center: true
+          });
           // var modal = UIkit.modal("#add");
           if (modal.isActive()) {
             modal.hide();
@@ -61,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
         start: '2019-11-30',
       }
     ],
+    eventClick: function(info) {
+      info.jsEvent.preventDefault(); // don't let the browser navigate
+      if (info.event.url) {
+        window.open(info.event.url);
+      }
+    }
   });
 
   calendar.render();
